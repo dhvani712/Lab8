@@ -50,7 +50,7 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     /**
-     * This adds city object to list
+     * This adds city to list
      * @param city to be added
      */
     public void addCity(City city) {
@@ -66,8 +66,16 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.contains(city);
     }
 
+    /**
+     * This deletes city from list
+     * @param city to be deleted
+     */
     public void deleteCity(City city) {
-
+        if (cities.contains(city)) {
+            cities.remove(city);
+        } else {
+            throw new IllegalArgumentException();
+        }
     }
 
 }
