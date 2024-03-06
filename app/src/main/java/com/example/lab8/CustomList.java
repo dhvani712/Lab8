@@ -29,7 +29,7 @@ public class CustomList extends ArrayAdapter<City> {
 
         View view = convertView;
 
-        if(view == null){
+        if (view == null) {
             view = LayoutInflater.from(context).inflate(R.layout.content, parent,false);
         }
 
@@ -64,6 +64,10 @@ public class CustomList extends ArrayAdapter<City> {
      */
     public boolean hasCity(City city) {
         return cities.contains(city);
+    }
+
+    public void deleteCity(City city) {
+
     }
 
 }
