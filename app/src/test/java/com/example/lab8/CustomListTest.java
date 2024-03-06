@@ -23,6 +23,17 @@ public class CustomListTest {
         return list;
     }
 
+    @Test
+    public void getCountTest() {
+        list = MockCityList();
+        assertEquals(0, list.getCount());
+        City city = new City("Regina", "SK");
+        list.addCity(city);
+        assertEquals(1, list.getCount());
+        list.deleteCity(city);
+        assertEquals(0, list.getCount());
+    }
+
     /**
      * Get size of list
      * Increase list by adding new city
