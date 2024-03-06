@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class CustomListTest {
     /**
-     * Create mock list for my citylist
+     * Create mock list for my city list
      */
     private CustomList list;
 
@@ -23,6 +23,11 @@ public class CustomListTest {
         return list;
     }
 
+    /**
+     * Check size of empty list is 0
+     * Add city, check size is 1
+     * Delete city, check size is 0 again
+     */
     @Test
     public void getCountTest() {
         list = MockCityList();
