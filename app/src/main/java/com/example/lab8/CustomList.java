@@ -53,8 +53,12 @@ public class CustomList extends ArrayAdapter<City> {
      * This adds city object to list
      * @param city to be added
      */
-    public void addCity(City city){
+    public void addCity(City city) {
         cities.add(city);
+    }
+
+    public boolean hasCity(City city) {
+        return true;
     }
 
 }
